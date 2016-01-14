@@ -62,7 +62,38 @@
 				</section>
 
 				<section>
-					<h2>Python으로 함수를 표현하기</h2>
+					<h2>Python으로 "집안일" 함수를 표현하기</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+def cook(s):
+  print s + " 밥을 준비합니다."
+  print s+ " 반찬을 준비합니다."
+  print s+ " 설거지를 합니다."
+  print "끝!!!"
+  print " "
+  
+def clean(room):
+  print room + " 청소를 합니다."
+  print "끝!!"
+
+print "함수 cook()을 연습합니다."  
+input()
+cook("아침")
+input()
+cook("점심")
+input()
+cook("저녁")
+
+print "함수 clean()을 연습합니다."
+input()
+clean("방")
+input()
+clean("거실")
+
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Python으로 "sing()" 함수를 표현하기</h2>
 					<pre><code class="hljs" data-trim contenteditable>
 # From "Teaching with Python" by John Zelle
 def happy():
@@ -77,7 +108,6 @@ def sing(P):
 # main
 sing("Fred")
 					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
 
 
