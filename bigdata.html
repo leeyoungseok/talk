@@ -44,53 +44,42 @@
 					<h1>빅데이터 </h1>
 					<h3> 데이터에 대한 이해 </h3>
 					<p>
-						<small>Created by <a href="http://yslee.cs-cnu.org">이영석</a> / <a href="http://twitter.com/yslee1225">@yslee1225</a></small>
+						<small>Created by <a href="http://yslee.cs-cnu.org">이영석 (http://yslee.cs-cnu.org)</a> / <a href="http://twitter.com/yslee1225">@yslee1225 (yslee@cs-cnu.org)</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>함수란 무엇인가? </h2>
-					<p> 어떤 일을 수행할 때 나누어서 실행시킬 수 있는 작은 단위의 작업 </p>
-					<p> 반복하는 일</p>
+					<h2>데이터가 중요한가요? </h2>
+					<p> More data usually beats better algorithm</p>
 				</section>
 
 				<section>
-					<h2> 예) "집안일"은 어떤 작은 일로 나누어질까? </h2>
-					<p class ="fragment">요리와 설거지하기</p>
-					<p class ="fragment">청소하기 </p>
-					<p class ="fragment">빨래하기 </p>
+					<h2>데이터 단위를 살펴봅시다. </h2>
+					<p class ="fragment">1 Terabyte (TB) = ? GB </p>
+					<p class ="fragment">1 Petabyte (PB) = ? TB </p>
+					<p class ="fragment">1 Exabyte (EB) = ? PB </p>
+					<p class ="fragment"> Zetta, Yotta, ... </p>
+
 				</section>
 
 				<section>
-					<h2>Python으로 "집안일" 함수를 표현하기</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-def cook(s):
-  print s + " 밥을 준비합니다."
-  print s+ " 반찬을 준비합니다."
-  print s+ " 설거지를 합니다."
-  print "끝!!!"
-  print " "
-  
-def clean(room):
-  print room + " 청소를 합니다."
-  print "끝!!"
+					<h2>빅데이터 문제는 어떤 것인가요?</h2>
+					<p> 10 TB 텍스트 파일을 처리해야한다. 이 파일은 정수데이터를 포함하고 있다. 처리할 일은 파일을 열어서 정수를 모두 읽고 오름차순으로 정렬하는 것이다.</p>
 
-print "함수 cook()을 연습합니다."  
-input()
-cook("아침")
-input()
-cook("점심")
-input()
-cook("저녁")
-
-print "함수 clean()을 연습합니다."
-input()
-clean("방")
-input()
-clean("거실")
-
-					</code></pre>
 				</section>
+
+				<section>
+					<h2>빅데이터 문제를 잘 푸는 기술을 가진 회사는 ?</h2>
+					<p class="fragment">  Google, Facebook, Walmart, eBay, ...
+					</p>
+				</section>
+
+				<section>
+					<h2>빅데이터 문제를 잘 푸는 핵심 기술은 ?</h2>
+					<p> 분석: 추천, 분류, 예측 </p>
+					<p> SW플랫폼:  분산컴퓨팅 SW (MapReduce, Hadoop, Spark, ...)</p>
+
+
 
 				<section>
 					<h2>Trinket에서 코드 실행하기</h2>
