@@ -40,7 +40,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section data-transition="slide" data-background-transition="zoom">
 					<h1>빅데이터 </h1>
 					<h3> 데이터에 대한 이해 </h3>
 					<p>
@@ -79,9 +79,11 @@
 
 				<section>
 					<h2>빅데이터 핵심 기술은 ?</h2>
-					<p> 분석알고리즘: 추천, 예측 (Machine Learning)</p>
-					<p> SW플랫폼: 분산컴퓨팅 SW (MapReduce, Hadoop, Spark, ...)</p>
-					<p class="fragment">분석알고리즘+SW 플랫폼 -> 문제해결 </p>
+					<ol>
+					<li> 분석알고리즘: 추천, 예측 (Machine Learning)</li>
+					<li> SW플랫폼: 분산컴퓨팅 SW (MapReduce, Hadoop, Spark, ...) </li>
+					<li> <p class="fragment">분석알고리즘+SW 플랫폼 -> 문제해결 </p> </li>
+					</ol>
 				</section>
 
 
@@ -107,19 +109,25 @@
 				<section>
 					<section>
 						<h2>Big Data by Definition</h2>
-						<p>Data sets whose size is beyond the ability of commonly used software tools to capture, manage, and process the data within a tolerable elapsed time</p>
+						<blockquote cite="http://www.wikipedia.org"> 
+						&ldquo; Data sets whose size is beyond the ability of commonly used software tools to capture, manage, and process the data within a tolerable elapsed time. &rdquo;
+						</blockquote>
 					</section>
 					<section>
 						<h2>Characteristics of Big Data</h2>
-						<p> Volume </p>
-						<p> Velocity </p>
-						<p> Variety </p>
+						<ul>
+						<li> Volume </li>
+						<li> Velocity </li>
+						<li> Variety </li>
+						</ul>
 					</section>
 					<section>
 						<h2>Architecture of Big Data</h2>
-						<p> In 2004, Google's MapReduce </p>
-						<p> In 2006, Doug Cutting's Hadoop</p>
-						<p> In 2009, Matei Zaharia's Spark</p>
+						<ol>
+						<li> In 2004, Google's MapReduce </li>
+						<li> In 2006, Doug Cutting's Hadoop</li>
+						<li> In 2009, Matei Zaharia's Spark</li>
+						</ol>
 					</section>
 					<section>
 						<h2>Big Data Echosystem</h2>
@@ -129,9 +137,10 @@
 
 				<section>
 					<h2>Hadoop</h2>
-					<p> Open-source framework for running applications on large clusters built of commodity hardware
-					</p>
-					<p> Implementation of MapReduce and HDFS </p>
+					<ul>
+					<li> Open-source framework for running applications on large clusters built of commodity hardware</li>
+					<li> Implementation of MapReduce and HDFS </li>
+					</ul>
 					<img width="350" height="350" data-src="http://www.wiziq.com/blog/wp-content/uploads/2014/03/poster-boy-hadoop.jpg">
 				</section>
 
@@ -142,12 +151,11 @@
 
 				<section>
 					<h2>Apache Hadoop</h2>
-					<p>
-					<h3> MapReduce: a distributed data processing model and execution environmnet that runs on large clusters of commodity machines </h3>
-					</p>
-					<p>
-					<h3> HDFS: a distributed filesystem that runs of large clusters of commodity machines
-					</p>
+					<ul>
+					<li> MapReduce: a distributed data processing model and execution environmnet that runs on large clusters of commodity machines </li>
+					<li> HDFS: a distributed filesystem that runs of large clusters of commodity machines
+					</li>
+					</ul>
 				</section>
 
 				<section>
