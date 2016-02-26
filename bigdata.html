@@ -41,7 +41,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1, color=#fff>빅데이터 </h1>
+					<h1>빅데이터 </h1>
 					<h3> 데이터에 대한 이해 </h3>
 					<p>
 						<small>Created by <a href="http://yslee.cs-cnu.org">이영석 (http://yslee.cs-cnu.org)</a> </small>
@@ -137,32 +137,38 @@
 
 				<section>
 					<h2>Google Trends</h2>
-					<iframe scrolling="no" style="border:none;" width="1200" height="800" src="http://www.google.com/trends/fetchComponent?hl=en-US&q=Hadoop &cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=1200&h=800"></iframe>
+					<iframe scrolling="no" style="border:none;" width="800" height="600" src="http://www.google.com/trends/fetchComponent?hl=en-US&q=Hadoop &cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=800&h=600"></iframe>
 				</section>
 
 				<section>
-					<h2>Touch Optimized</h2>
+					<h2>Apache Hadoop</h2>
 					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					<h3> MapReduce: a distributed data processing model and execution environmnet that runs on large clusters of commodity machines </h3>
+					</p>
+					<p>
+					<h3> HDFS: a distributed filesystem that runs of large clusters of commodity machines
 					</p>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+				<section>
+					<h2>MapReduce</h2>
+                                        <pre><code class="hljs" data-trim contenteditable>
+function map(String name, String document):
+  // name: document name
+  // document: document contents
+  for each word w in document:
+    emit (w, 1)
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+function reduce(String word, Iterator partialCounts):
+  // word: a word
+  // partialCounts: a list of aggregated partial counts
+  sum = 0
+  for each pc in partialCounts:
+    sum += pc
+  emit (word, sum)
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+					</code></pre>
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
 				</section>
 
 				<section>
