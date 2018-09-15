@@ -1,4 +1,327 @@
-컴퓨터프로그래밍2
+<!doctype html>
+<html lang="en">
 
-자바프로그래밍 실습입니다.
-깃허브로 블로그를 합시다.
+	<head>
+		<meta charset="utf-8">
+
+		<title>자바 프로그래밍 in reveal.js</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Youngseok Lee">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h1>자바프로그래밍 </h1>
+					<h3>문제해결 도구로 생각하기</h3>
+					<p>
+						<small>Created by <a href="http://yslee.cs-cnu.org">이영석 (http://yslee.cs-cnu.org)</a> </small>
+					</p>
+ 					<p>
+						<small><a href="http://twitter.com/yslee1225">@yslee1225 (yslee@cs-cnu.org)</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>프로그래밍이 중요한가요? </h2>
+					<blockquote>
+					<p class="fragment"> &ldquo; 네, 여러분은 컴퓨터전공생으로 하드웨어, 소프트웨어에 관한 공부를 하여 문제해결을 합니다. 프로그래밍은 문제해결을 위한 도구입니다. &rdquo; by 이영석</p>
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>왜 자바를 공부하나요?</h2>
+					<ul>
+					<li> 웹 프로그래밍을 위해서  </li>
+					<li> 모바일 프로그래밍을 위해서 </li>
+					<li> 객체지향 프로그래밍을 위해서  </li>
+					<li> 오픈소스 자바 프로그래밍 프로젝트가 많이 있습니다. (하둡) </li>
+					</ul>
+				</section>
+
+				<section data-background="#dddddd">
+					<h2> 100 TB 정렬을 빠르게 하기  </h2>
+					<ul>
+					<li> 무슨 알고리즘을 쓸까? </li>
+					<li> 현실적인 문제: 100 TB 저장 ? 메모리 ? ... </li>
+					</ul>
+					<iframe src="http://sortbenchmark.org/" width="100%" height="556" frameborder="2" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+				</section>
+
+				<section>
+					<h2>데이터 단위를 살펴봅시다. </h2>
+					<p class ="fragment">1 Terabyte (TB) = ? GB </p>
+					<p class ="fragment">1 Petabyte (PB) = ? TB </p>
+					<p class ="fragment">1 Exabyte (EB) = ? PB </p>
+					<p class ="fragment"> Zetta, Yotta, ... </p>
+
+				</section>
+
+
+				<section>
+					<h2>빅데이터 기술을 가진 회사는 ?</h2>
+					<p class="fragment">  Google, Facebook, Amazon, MS, Netflix, Walmart, eBay, ...
+					<p class="fragment">  Alibaba, Baidu, ...
+					</p>
+				</section>
+
+				<section>
+					<h2>빅데이터 핵심 기술은 ?</h2>
+					<ol>
+					<li> 분석알고리즘: 추천, 예측 (Machine Learning)</li>
+					<li> SW플랫폼: 분산컴퓨팅 SW (MapReduce, Hadoop, Spark, ...) </li>
+					<li> <p class="fragment">분석알고리즘+SW 플랫폼 -> 문제해결 </p> </li>
+					</ol>
+				</section>
+
+
+
+				<section>
+					<h2>Example: Web Search</h2>
+					<iframe src="https://sungmooncho.com/2012/08/26/pagerank/" width="100%" height="556" frameborder="2" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+				</section>
+
+				<section>
+					<h2>Example: Recommendation</h2>
+					<p> Facebook's EdgeRank</p>
+					<img width="800" height="430" data-src="http://www.socialbakers.com//storage/www/edgerank-1-.png">
+				</section>
+
+				<section>
+					<h2>Example: Prediction</h2>
+					<iframe src="http://www.huffingtonpost.com/2014/01/18/amazon-anticipatory-shipping-items-before-ordered_n_4623499.html" width="100%" height="556" frameborder="2" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Big Data by Definition</h2>
+						<blockquote cite="http://www.wikipedia.org">
+						&ldquo; Data sets whose size is beyond the ability of commonly used software tools to capture, manage, and process the data within a tolerable elapsed time. &rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h2>Characteristics of Big Data</h2>
+						<ul>
+						<li> Volume </li>
+						<li> Velocity </li>
+						<li> Variety </li>
+						</ul>
+					</section>
+					<section>
+						<h2>Architecture of Big Data</h2>
+						<ol>
+						<li> In 2004, Google's MapReduce </li>
+						<li> In 2006, Doug Cutting's Hadoop</li>
+						<li> In 2009, Matei Zaharia's Spark</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Big Data Echosystem</h2>
+						<img width="800" height="500" data-src="http://www.clearpeaks.com/blog/wp-content/uploads/2015/07/Image-1.png">
+					</section>
+				</section>
+
+				<section>
+					<h2>Hadoop</h2>
+					<ul>
+					<li> Open-source framework for running applications on large clusters built of commodity hardware</li>
+					<li> Implementation of MapReduce and HDFS </li>
+					</ul>
+					<img width="400" height="350" data-src="https://regmedia.co.uk/2014/05/08/hadoop_the_elephant_and_doug_cutting.png">
+				</section>
+
+				<section data-background="#dddddd">
+					<h2>Google Trends</h2>
+					<iframe scrolling="no" style="border:none;" width="100%" height="600" src="http://www.google.com/trends/fetchComponent?hl=en-US&q=Hadoop &cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=800&h=600"></iframe>
+				</section>
+
+				<section>
+					<h2>Apache Hadoop</h2>
+					<ul>
+					<li> MapReduce: a distributed data processing model and execution environmnet that runs on large clusters of commodity machines </li>
+					<li> HDFS: a distributed filesystem that runs of large clusters of commodity machines
+					</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>MapReduce </h2>
+					<ul>
+					<li> Published by J. Dean and S. Ghemawat, <a href="http://research.google.com/archive/mapreduce-osdi04-slides/index.html">MapReduce: Simplified Data Processing on Large Cluster</a>, OSDI, 2004 </li>
+					<iframe src="http://research.google.com/archive/mapreduce-osdi04-slides/index.html" width="100%" height="456" frameborder="2" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>MapReduce: Code</h2>
+                                        <pre><code class="hljs" data-trim contenteditable>
+function map(String name, String document):
+  // name: document name
+  // document: document contents
+  for each word w in document:
+    emit (w, 1)
+
+function reduce(String word, Iterator partialCounts):
+  // word: a word
+  // partialCounts: a list of aggregated partial counts
+  sum = 0
+  for each pc in partialCounts:
+    sum += pc
+  emit (word, sum)
+
+					</code></pre>
+
+				</section>
+
+				<section>
+					<h2>Melon</h2>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/qpaAGZZf5VG6LR" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/gruter/gruter-techday-2014-melon-bigdata" title="Gruter TECHDAY 2014 MelOn BigData" target="_blank">Gruter TECHDAY 2014 MelOn BigData</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/gruter">Gruter</a></strong> </div>
+				</section>
+
+
+				<section>
+					<h2>R and others </h2>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/m2kHtjlrDe9wt3" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/gruter/ruck2015-gruter-public" title="Big data analysis with R and Apache Tajo (in Korean)" target="_blank">Big data analysis with R and Apache Tajo (in Korean)</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/gruter">Gruter</a></strong> </div>
+				</section>
+
+				<section>
+					<h2>Amazon </h2>
+			<iframe src="//www.slideshare.net/slideshow/embed_code/key/1hChBA1eMEspky" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/awskr/awskrug-reinvent-iot" title="AWSKRUG 콘퍼런스 - re:Invent 신규 서비스 (윤석찬) - 빅데이터 분석, 모바일 및 IoT를 중심으로" target="_blank">AWSKRUG 콘퍼런스 - re:Invent 신규 서비스 (윤석찬) - 빅데이터 분석, 모바일 및 IoT를 중심으로</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/awskr">AWS Korea UserGroup (AWS한국사용자모임)</a></strong> </div>
+				</section>
+
+				<section>
+					<h2>NCsoft</h2>
+					<iframe src="//www.slideshare.net/slideshow/embed_code/key/HHFpr24lFz8Vm6" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/LeeEunJo/r-14930327" title="R을 이용한 게임 데이터 분석" target="_blank">R을 이용한 게임 데이터 분석</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/LeeEunJo">Eun-Jo Lee</a></strong> </div>
+				</section>
+
+				<section>
+					<h2>5Rocks</h2>
+					<iframe src="//www.slideshare.net/slideshow/embed_code/key/cKxtsx8jdw49g0" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/deview/244-5rocksdeview" title="244 5rocks-deview" target="_blank">244 5rocks-deview</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/deview">NAVER D2</a></strong> </div>
+				</section>
+
+				<section>
+					<h2> DNLAB </h2>
+					<iframe src="//www.slideshare.net/slideshow/embed_code/key/l8Gwlp464dK6TT" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/YeonheeLee/net-flowhadoop-flocon2013yhleefinal" title="Net flowhadoop flocon2013_yhlee_final" target="_blank">Net flowhadoop flocon2013_yhlee_final</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/YeonheeLee">Yeounhee Lee</a></strong> </div>
+				</section>
+
+				<section data-background="#dddddd">
+					<h2> DNLAB's News </h2>
+					<p> <a href="https://github.com/ssallys/p3"> Github P3 project </a> </p>
+					<iframe src="http://www.dt.co.kr/contents.html?article_no=2013011602011060746002" width="800" height="600"></iframe>
+				</section>
+
+				<section>
+					<h2> <a href="http://www.quantifiedself.com"> Quantified Self </a> </h2>
+					<ul>
+					<li> 자신을 측정하여 삶의 개선하려는 운동 </li>
+					<li> 핵심은 자동 수집 및 분석</li>
+					<li> 예) Fitbit, Rescuetime, Coachme.com, <a href="www.hellodatascience.com">Hellodatascience.com </a></li>
+					</ul>
+
+				</section>
+                                <section>
+					<img width="400" height="350" data-src="fitbit-body-yslee.PNG">
+					<img width="400" height="350" data-src="fitbit-step-yslee.PNG">
+					<img width="400" height="350" data-src="rescue-time.PNG">
+
+                                </section>
+				<section>
+					<h2> Graph of My Fitness </h2>
+					<iframe width="800" height="600" src="https://www.youtube.com/embed/qPGkmtZf0q0" frameborder="0" allowfullscreen></iframe>
+				</section>
+
+				<section>
+					<h2> WordCloud</h2>
+					<iframe width="800" height="600" src="https://www.youtube.com/embed/rCRVFhRaDwA" frameborder="0" allowfullscreen></iframe>
+				</section>
+
+				<section>
+					<h2> Data Mind </h2>
+<p><a href="https://commons.wikimedia.org/wiki/File:Nightingale-mortality.jpg#/media/File:Nightingale-mortality.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Nightingale-mortality.jpg" alt="Polar chart by Florence Nightingale, 1858" height="600" width="800"></a><br>By <a href="//en.wikipedia.org/wiki/Florence_Nightingale" class="extiw" title="w:Florence Nightingale">w:Florence Nightingale</a> (1820?1910). - <a rel="nofollow" class="external free" href="http://www.royal.gov.uk/output/Page3943.asp">http://www.royal.gov.uk/output/Page3943.asp</a>, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1474443</p>
+
+				</section>
+
+				<section>
+					<h2> Data Mind </h2>
+					<img width="800" height="430" data-src="http://matrix.msu.edu/~johnsnow/images/online_companion/chapter_images/fig12-5.jpg">
+				</section>
+
+				<section>
+					<h2> Interested in Big Data ? </h2>
+					<ul>
+					<li> 데이터과학: 컴퓨터공학 + 통계학 (데이터마이닝, 머신러닝, 딥러닝) </li>
+					<li> 데이터과학은 문제를 해결하는 도구: Small data부터 시작 (LAMP) </li>
+					<li> Hadoop/Hive/Spark + Python scikit + R + Tensorflow ... (SMAQ) </li>
+					<li> Git, JIRA, Jenkins, Slack, Trello, JUnit, Selenium, ...
+					<li> 컴퓨터공학 기반을 갖춘 데이터과학자가 됩시다 ! </li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				slideNumber: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
