@@ -41,36 +41,34 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h1>빅데이터 </h1>
-					<h3>데이터 과학자처럼 생각하기</h3>
+					<h1>데이터로 문제풀기</h1>
+					<h3>Data, SW, Insight ?</h3>
 					<p>
 						<small>Created by <a href="http://yslee.cs-cnu.org">이영석 (http://yslee.cs-cnu.org)</a> </small>
-					</p>
- 					<p>
-						<small><a href="http://twitter.com/yslee1225">@yslee1225 (yslee@cs-cnu.org)</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>데이터가 중요한가요? </h2>
+					<h2>데이터? 알고리즘? </h2>
 					<blockquote>
 					<p class="fragment"> &ldquo;More data usually beats better algorithms.&rdquo; by Anand Rajaraman</p>
 					</blockquote>
 				</section>
 
 				<section>
-					<h2>빅데이터 문제는 어떤 것인가요?</h2>
+					<h2>데이터로 혁신한 경우는??</h2>
 					<ul>
-					<li> 전세계 웹 페이지에서 원하는 웹페이지 검색해서 찾기 </li>
-					<li> 검색엔진의 키워드로 독감 유행 예측하기</li>
-					<li> 트위터를 보고 선거 여론조사하기 </li>
-					<li> 10 TB 텍스트 파일 정렬하기</li>
+					<li> 검색의 Google (Altavista, Yahoo!, ...)</li>
+					<li> 친구의 Facebook (MySpace, 싸이월드 )</li>
+					<li> 쇼핑의 Amazon (토이저러스, 보더스, 반스앤노블 )</li>
+					<li> 영화의 Netlix (블럭버스터)</li>
+					<li> 음악의 Spotify </li>
 					</ul>
 				</section>
 
 				<section data-background="#dddddd">
-					<h2> 100 TB 정렬을 빠르게 하기  </h2>
-					<ul> 
+					<h2> 숙제: 100 TB 정렬 속도  </h2>
+					<ul>
 					<li> 무슨 알고리즘을 쓸까? </li>
 					<li> 현실적인 문제: 100 TB 저장 ? 메모리 ? ... </li>
 					</ul>
@@ -78,7 +76,7 @@
 				</section>
 
 				<section>
-					<h2>데이터 단위를 살펴봅시다. </h2>
+					<h2>바이트? </h2>
 					<p class ="fragment">1 Terabyte (TB) = ? GB </p>
 					<p class ="fragment">1 Petabyte (PB) = ? TB </p>
 					<p class ="fragment">1 Exabyte (EB) = ? PB </p>
@@ -88,22 +86,21 @@
 
 
 				<section>
-					<h2>빅데이터 기술을 가진 회사는 ?</h2>
+					<h2>데이터를 잘 다루는 회사는 ?</h2>
 					<p class="fragment">  Google, Facebook, Amazon, MS, Netflix, Walmart, eBay, ...
 					<p class="fragment">  Alibaba, Baidu, ...
 					</p>
 				</section>
 
 				<section>
-					<h2>빅데이터 핵심 기술은 ?</h2>
+					<h2>데이터 다루는 핵심 기술은 ?</h2>
 					<ol>
-					<li> 분석알고리즘: 추천, 예측 (Machine Learning)</li>
+					<li> 데이터 수집</li>
+					<li> 분석알고리즘: 추천, 예측 (data mining/machine learning)</li>
 					<li> SW플랫폼: 분산컴퓨팅 SW (MapReduce, Hadoop, Spark, ...) </li>
-					<li> <p class="fragment">분석알고리즘+SW 플랫폼 -> 문제해결 </p> </li>
+					<li> <p class="fragment">분석알고리즘 + SW 플랫폼 -> 문제해결 </p> </li>
 					</ol>
 				</section>
-
-
 
 				<section>
 					<h2>Example: Web Search</h2>
@@ -126,7 +123,7 @@
 				<section>
 					<section>
 						<h2>Big Data by Definition</h2>
-						<blockquote cite="http://www.wikipedia.org"> 
+						<blockquote cite="http://www.wikipedia.org">
 						&ldquo; Data sets whose size is beyond the ability of commonly used software tools to capture, manage, and process the data within a tolerable elapsed time. &rdquo;
 						</blockquote>
 					</section>
@@ -181,7 +178,7 @@
 					<li> Published by J. Dean and S. Ghemawat, <a href="http://research.google.com/archive/mapreduce-osdi04-slides/index.html">MapReduce: Simplified Data Processing on Large Cluster</a>, OSDI, 2004 </li>
 					<iframe src="http://research.google.com/archive/mapreduce-osdi04-slides/index.html" width="100%" height="456" frameborder="2" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 					</ul>
-					
+
 				</section>
 
 				<section>
@@ -207,7 +204,7 @@ function reduce(String word, Iterator partialCounts):
 
 				<section>
 					<h2>Melon</h2>
-					
+
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/qpaAGZZf5VG6LR" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/gruter/gruter-techday-2014-melon-bigdata" title="Gruter TECHDAY 2014 MelOn BigData" target="_blank">Gruter TECHDAY 2014 MelOn BigData</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/gruter">Gruter</a></strong> </div>
 				</section>
 
@@ -216,7 +213,7 @@ function reduce(String word, Iterator partialCounts):
 					<h2>R and others </h2>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/m2kHtjlrDe9wt3" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/gruter/ruck2015-gruter-public" title="Big data analysis with R and Apache Tajo (in Korean)" target="_blank">Big data analysis with R and Apache Tajo (in Korean)</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/gruter">Gruter</a></strong> </div>
 				</section>
-	
+
 				<section>
 					<h2>Amazon </h2>
 			<iframe src="//www.slideshare.net/slideshow/embed_code/key/1hChBA1eMEspky" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/awskr/awskrug-reinvent-iot" title="AWSKRUG 콘퍼런스 - re:Invent 신규 서비스 (윤석찬) - 빅데이터 분석, 모바일 및 IoT를 중심으로" target="_blank">AWSKRUG 콘퍼런스 - re:Invent 신규 서비스 (윤석찬) - 빅데이터 분석, 모바일 및 IoT를 중심으로</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/awskr">AWS Korea UserGroup (AWS한국사용자모임)</a></strong> </div>
@@ -250,13 +247,13 @@ function reduce(String word, Iterator partialCounts):
 					<li> 핵심은 자동 수집 및 분석</li>
 					<li> 예) Fitbit, Rescuetime, Coachme.com, <a href="www.hellodatascience.com">Hellodatascience.com </a></li>
 					</ul>
-					
+
 				</section>
                                 <section>
 					<img width="400" height="350" data-src="fitbit-body-yslee.PNG">
 					<img width="400" height="350" data-src="fitbit-step-yslee.PNG">
 					<img width="400" height="350" data-src="rescue-time.PNG">
-                           
+
                                 </section>
 				<section>
 					<h2> Graph of My Fitness </h2>
