@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>자바 프로그래밍 in reveal.js</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Youngseok Lee">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h1>자바프로그래밍 </h1>
+					<h3>문제해결 도구로 생각하기</h3>
+					<p>
+						<small>Created by <a href="http://yslee.cs-cnu.org">이영석 (http://yslee.cs-cnu.org)</a> </small>
+					</p>
+ 					<p>
+						<small><a href="http://twitter.com/yslee1225">@yslee1225 (yslee@cs-cnu.org)</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>프로그래밍이 중요한가요? </h2>
+					<blockquote>
+					<p class="fragment"> &ldquo; 네, 여러분은 컴퓨터전공생으로 하드웨어와 소프트웨어에 관한 공부를 하여 문제해결을 합니다. 프로그래밍은 문제해결을 위한 도구입니다. &rdquo; by 이영석</p>
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>자바 어디에?</h2>
+					<ul>
+					<li> 웹 프로그래밍을 위해서  </li>
+					<li> 모바일 프로그래밍을 위해서 </li>
+					<li> 객체지향 프로그래밍을 위해서  </li>
+					<li> 오픈소스 자바 프로그래밍 프로젝트가 많이 있습니다. (하둡) </li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2> 주요 특징 </h2>
+					<p class ="fragment"> 가상 머신 </p>
+					<p class ="fragment"> 수많은 개발자, 레퍼런스 </p>
+					<p class ="fragment"> 높은 생산성, 안정성, 가독성 </p>
+					<p class ="fragment"> 기기 호환성 </p>
+
+				</section>
+
+
+				<section>
+					<h2>단점</h2>
+					<p class="fragment">  느린  JVM 로딩 속도
+					<p class="fragment">  가상 머신 바이트코드 속도
+					<p class="fragment">  가비지 컬렉션에 의한 실행 지연 문제
+          <p class="fragment">  소스코드 길이가 길다
+					<p class="fragment">  명사로만 생각한다
+					</p>
+				</section>
+
+				<section>
+					<h2> 자바 스윙 많이 쓰나요 ?</h2>
+					<ol>
+					<li> 아니요. 일부 분야에서 많이 씁니다. </li>
+					<li> NMS, 모니터링, 웹으로 불가능한 앱을 크로스 플랫폼에서 지원할 때 </li>
+					</ol>
+				</section>
+
+				<section data-background="#dddddd">
+					<h2> 왜 자바 공부하나요?  </h2>
+					<ul>
+					<li> 어떤 프로그래밍 언어를 공부할까? </li>
+					<li> 남들 많이 쓰는 것부터... </li>
+					</ul>
+					<iframe src="https://www.tiobe.com/tiobe-index/" width="100%" height="556" frameborder="2" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				slideNumber: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

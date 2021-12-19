@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Big Data Overview in reveal.js</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Youngseok Lee">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-sty le" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-transition="slide" data-background="#4d7e65" data-background-image = "yslee-icon.png" data-background-transition="zoom">
+					<h1><font color="#000000">Newtorking Data</font></h1>
+					<h3><font color="#f08">Data,</font> <font color="#000080">Networking,</font> <font color="#00FF00">Insight </font>?</h3>
+					<p>
+						<small>Created by <a href="http://yslee.cs-cnu.org"><font color="800000">이영석 (http://yslee.cs-cnu.org)</font></a> </small>
+					</p>
+				</section>
+
+				<section>
+					<h2><font color="#f08">Data ? </font> <font color="FFFF00">Networking? </font> </h2>
+					<blockquote>
+					<p class="fragment"> &ldquo;Data <font color = "#f08"> is raw, </font> <font color="FFFF00">, preprocessed, engineered for analysis to achieve better product !  </font>.&rdquo; by Youngseok Lee </p>
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>데이터 혁신한 경우는??</h2>
+					<ul>
+					<li> 검색의 Google (Altavista, Yahoo!, ...)</li>
+					<li> 친구의 Facebook (MySpace, 싸이월드 )</li>
+					<li> 쇼핑의 Amazon (토이저러스, 보더스, 반스앤노블 )</li>
+					<li> 영화의 Netlix (블럭버스터)</li>
+					<li> 음악의 Spotify </li>
+					</ul>
+				</section>
+
+				<section data-background="#dddddd">
+					<h2> 숙제: 100 TB 정렬을 가장 빨리 하는 사람은 A+ !  </h2>
+					<ul>
+					<li> 무슨 알고리즘을 쓸까? </li>
+					<li> 현실적인 문제: 100 TB 저장 ? 메모리 ? ... </li>
+					</ul>
+					<iframe src="http://sortbenchmark.org/" width="100%" height="556" frameborder="2" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+				</section>
+
+				<section>
+					<h2>바이트? </h2>
+					<p class ="fragment">1 Terabyte (TB) = ? GB </p>
+					<p class ="fragment">1 Petabyte (PB) = ? TB </p>
+					<p class ="fragment">1 Exabyte (EB) = ? PB </p>
+					<p class ="fragment"> Zetta, Yotta, ... </p>
+
+				</section>
+
+
+				<section>
+					<h2>데이터를 잘 다루는 회사는 ?</h2>
+					<p class="fragment">  Google, Facebook, Amazon, MS, Netflix, Walmart, eBay, ...
+					<p class="fragment">  Alibaba, Baidu, ...
+					</p>
+				</section>
+
+				<section>
+					<h2>데이터 다루는 핵심 기술은 ?</h2>
+					<ol>
+					<li> 데이터 수집: Apache Flume, Apache Kafka </li>
+					<li> 분석알고리즘: 추천, 예측 (data mining/machine learning)</li>
+					<li> 분산컴퓨팅 SW 플랫폼: MapReduce, Hadoop, Spark, ...) </li>
+					<li> <p class="fragment">분석알고리즘 + SW 플랫폼 -> 문제해결 </p> </li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Example: Web Search</h2>
+					<iframe src="https://sungmooncho.com/2012/08/26/pagerank/" width="100%" height="556" frameborder="2" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+				</section>
+
+				<section>
+					<h2>Example: Recommendation</h2>
+					<p> Netflix Prize</p>
+					<img width="800" height="430" data-src="https://assets3.thrillist.com/v1/image/2677184/size/gn-gift_guide_variable_c;jpeg_quality=20.jpg">
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Big Data by Definition</h2>
+						<blockquote cite="http://www.wikipedia.org">
+						&ldquo; Data sets whose size is beyond the ability of commonly used software tools to capture, manage, and process the data within a tolerable elapsed time. &rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Architecture of Big Data</h2>
+						<ol>
+						<li> In 2004, Google's MapReduce </li>
+						<li> In 2006, Doug Cutting's Hadoop</li>
+						<li> In 2009, Matei Zaharia's Spark</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Big Data Echosystem</h2>
+						<img width="800" height="500" data-src="kakfa.jpg">
+					</section>
+				</section>
+
+				<section>
+					<h2>Hadoop</h2>
+					<ul>
+					<li> Open-source framework for running applications on large clusters built of commodity hardware</li>
+					<li> Implementation of MapReduce and HDFS </li>
+					</ul>
+					<img width="400" height="350" data-src="https://regmedia.co.uk/2014/05/08/hadoop_the_elephant_and_doug_cutting.png">
+				</section>
+
+				<section>
+					<h2>Apache Hadoop</h2>
+					<ul>
+					<li> MapReduce: a distributed data processing model and execution environmnet that runs on large clusters of commodity machines </li>
+					<li> HDFS: a distributed filesystem that runs of large clusters of commodity machines
+					</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>MapReduce </h2>
+					<ul>
+					<li> Published by J. Dean and S. Ghemawat, <a href="http://research.google.com/archive/mapreduce-osdi04-slides/index.html">MapReduce: Simplified Data Processing on Large Cluster</a>, OSDI, 2004 </li>
+					<iframe src="http://research.google.com/archive/mapreduce-osdi04-slides/index.html" width="100%" height="456" frameborder="2" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>MapReduce: Code</h2>
+                                        <pre><code class="hljs" data-trim contenteditable>
+function map(String name, String document):
+  // name: document name
+  // document: document contents
+  for each word w in document:
+    emit (w, 1)
+
+function reduce(String word, Iterator partialCounts):
+  // word: a word
+  // partialCounts: a list of aggregated partial counts
+  sum = 0
+  for each pc in partialCounts:
+    sum += pc
+  emit (word, sum)
+
+					</code></pre>
+
+				</section>
+
+				<section>
+					<h2> Data Mind </h2>
+<p><a href="https://commons.wikimedia.org/wiki/File:Nightingale-mortality.jpg#/media/File:Nightingale-mortality.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Nightingale-mortality.jpg" alt="Polar chart by Florence Nightingale, 1858" height="600" width="800"></a><br>By <a href="//en.wikipedia.org/wiki/Florence_Nightingale" class="extiw" title="w:Florence Nightingale">w:Florence Nightingale</a> (1820?1910). - <a rel="nofollow" class="external free" href="http://www.royal.gov.uk/output/Page3943.asp">http://www.royal.gov.uk/output/Page3943.asp</a>, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1474443</p>
+				</section>
+
+				<section>
+					<h2> DNLAB Networking Data </h2>
+							<iframe src="scholar.JPG" width="800" height="600"> </iframe>
+				</section>
+
+				<section data-background="#dddddd">
+					<h2> DNLAB's GitHub Project  </h2>
+						<p> <a href="https://github.com/ssallys/p3"> Github P3 project </a> </p>
+						<iframe src="github.JPG" width="800" height="600"></iframe>
+				</section>
+
+				<section>
+					<h2> DNLAB WordCloud </h2>
+							<iframe src="2019-dnlab-wordcloud.png" width="600" height="600"> </iframe>
+				</section>
+
+
+				<section>
+					<h2> Interested in Networking Data ? </h2>
+					<ul>
+					<li> 데이터분석: 컴퓨터공학 + 통계학 (데이터마이닝, 머신러닝, 딥러닝) </li>
+					<li> 데이터엔지니어링: Small data부터 시작 (LAMP), Hadoop/Hive/Spark + Python scikit + R + Tensorflow ... (SMAQ) </li>
+					<li> <font color="#FFFF00">컴퓨터공학</font> 기반을 갖춘 <font color="00FF00">데이터 네트워크 엔지니어</font>가 됩시다 ! </li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				slideNumber: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
